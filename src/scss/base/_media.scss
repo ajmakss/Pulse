@@ -8,6 +8,25 @@
            padding-right: 15px;
         }
     }
+    .benefits{
+        padding: 46px 0 45px;
+        &__title {
+            font-size: 25px;
+            margin-bottom: 35px;
+        }
+        &__wrapper{
+            flex-direction: column;
+        }
+        &__item {
+            margin-right: 0;
+            margin-bottom: 25px;
+        }
+    }
+    
+    .consultation {
+        background: red;
+    }
+
 }
 @media (max-width: 575px) {
     .header {
@@ -30,22 +49,9 @@
             font-size: 20px;
         }
     }
-    .benefits{
-        padding: 46px 0 45px;
-        &__title {
-            font-size: 30px;
-            margin-bottom: 35px;
-        }
-        &__wrapper{
-            flex-direction: column;
-        }
-        &__item {
-            margin-right: 0;
-            margin-bottom: 25px;
-        }
-    }
      
 }
+
 @media (max-width: 425px) {
     .promo {
         background: url(../../img/bg.png) left (center/cover) no-repeat;
