@@ -22,11 +22,27 @@
             margin-bottom: 25px;
         }
     }
-    
-    .consultation {
-        background: red;
+    .title_left {
+        font-size: 27px;
+        text-align: center;
     }
-
+    .consultation {
+        padding: 60px 10px 43px;
+        &__descr {
+            text-align: center;
+        }
+    }
+    .feed-form {
+        margin: 0 auto;
+        margin-top: 26px;
+    }
+    .caroulsel {
+        &__inner {
+            img {
+                width: 83%;
+            }
+        }
+    }
 }
 @media (max-width: 575px) {
     .header {
