@@ -43,6 +43,23 @@
             }
         }
     }
+    .catalog {
+        padding-bottom: 20px;
+    }
+    .reviews {
+        .reviews__item {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        .reviews__texts {
+            margin-top: 21px;
+            margin-left: 0;
+        }
+    }
 }
 @media (max-width: 575px) {
     .header {
@@ -76,6 +93,14 @@
          }
          .catalog__content {
              margin-top: 20px;
+         }
+     }
+
+     .footer {
+         .footer__info{
+             height: 240px;
+             width: 90%;
+             padding: 20px;
          }
      }
 }
