@@ -65,7 +65,19 @@
             font-size: 20px;
         }
     }
-     
+     .catalog {
+         &__tabs {
+             flex-direction: column;
+             align-items: center;
+             justify-content: center;
+         }
+         .catalog__tab {
+             margin-bottom: 15px;
+         }
+         .catalog__content {
+             margin-top: 20px;
+         }
+     }
 }
 
 @media (max-width: 425px) {
