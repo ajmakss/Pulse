@@ -73,3 +73,60 @@ function tabs (headerSelector, tabSelector, contentSelector, activeSelector, dis
 
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__back');
+
+    //Modal
+    
+    $('[data-modal=consultation]').on('click', function() {
+        $('.overlay, #consultation').fadeIn();
+        $('body').css('overflow','hidden');
+    });
+
+    $('.modal__close').on('click', function() {
+        $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+        $('body').css('overflow','visible');
+     
+    });
+
+    $('.button_mini').each(function(i) {
+        $(this).on('click', function(){
+            $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text())
+            $('.overlay,  #order').fadeIn('slow');
+            $('body').css('overflow','hidden');
+        })  
+    })
+
+
+    //Forms validation
+
+    function validateForm(form) {
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2,
+                },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true,
+                }
+            },
+                messages: {
+                    name: {
+                        required: 'Пожалуйста, введите свое имя',
+                        minlength: jQuery.validator.format("Введите {0} символa!")
+                    },
+                    phone: 'Пожалуйста, введите свой номер телефона',
+                    email: {
+                        required: 'Пожалуйста введите свою почту',
+                        email: 'Неправильно введен адрес почты'
+                    }
+                },
+    
+        });
+    }
+    validateForm('#consultation-form');
+    validateForm('#consultation form')
+    validateForm('#order form');
+
+    $('input[name="phone"').mask("+7 (999) 999-99-99")

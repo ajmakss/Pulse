@@ -8,7 +8,7 @@
            padding-right: 15px;
         }
     }
-    .benefits{
+    .benefits {
         padding: 46px 0 45px;
         &__title {
             font-size: 25px;
@@ -58,6 +58,12 @@
         .reviews__texts {
             margin-top: 21px;
             margin-left: 0;
+        }
+    }
+    .modal {
+        .modal__close {
+            top: 9px;
+            right: 10px;
         }
     }
 }
