@@ -27,6 +27,12 @@
     &__icon {
         width: 70px;
         margin-bottom: 35px;
+        &_animated {
+            animation: heartbeat 1.5s ease infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
     }
 
     // .benefits__item-title

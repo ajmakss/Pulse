@@ -9,7 +9,10 @@
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-
+    &:hover {
+        background: rgb(199,1,1);
+        background: linear-gradient(0deg, rgba(199,1,1,1) 0%, rgba(255,36,36,1) 100%);
+    }
     &_main {
         margin-top: 67px;
         width: 300px;
